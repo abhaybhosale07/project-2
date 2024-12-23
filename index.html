@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>YouTube Certification Platform</h1>
+        <form id="videoForm">
+            <label for="youtubeLink">YouTube Video Link:</label>
+            <input type="url" id="youtubeLink" required>
+            
+            <label for="videoDescription">Video Description:</label>
+            <textarea id="videoDescription" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+        
+        <div id="testSection" style="display: none;">
+            <h2>Test</h2>
+            <div id="testQuestions">
+                <!-- Test questions will be injected here -->
+            </div>
+            <button id="submitTest">Submit Test</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
